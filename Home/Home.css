@@ -2,7 +2,7 @@
     top:0;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Wulkan Display Medium", serif;
     font-size: 14px;
 }
 
@@ -13,6 +13,10 @@ header{
   position: fixed;
   width: 100%;
   height: 5%;
+}
+
+p{
+  font-size: 1.2em;
 }
 
 .container{
@@ -66,7 +70,7 @@ section::before{
   bottom: 0;
   width: 100%;
   height: 200px;
-  background: linear-gradient(to top,#FFFFFF, transparent );
+  background: linear-gradient(to top,#FFFFFF, transparent);
   z-index: 1000;
 }
 
@@ -78,6 +82,7 @@ section img{
 }
 
 h1{
+  font-family:font-family: "Wulkan Display Medium", serif;;
   position: absolute;
   display: none;
   margin-top: 250px;
@@ -98,10 +103,8 @@ h1{
 }
 
 h3{
-  position: relative;
   color: black;
-  margin-top: 90px;
-  width: 100%;
+  width: inherit;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -109,19 +112,54 @@ h3{
 }
 
 .sec1{
+  margin: 100px;
+  display:flex;
   position: relative;
-  height: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: inherit;
   background-color: #FFFFFF;
-  box-shadow:
 }
 
 .inhalt{
   border-radius: 25px;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
-  width: 28%;
+  width: 40%;
   margin: auto;
   background: transparent;
   text-align: center;
   align-items: center;
   padding: 30px;
+}
+
+.hr1{
+  color: inherit;
+  margin: auto;
+  margin-top: 10%;
+  width: 0%;
+  -webkit-animation: seperator 1s ease-out forwards;
+  animation: seperator 1s ease-out forwards;
+}
+
+@-webkit-keyframes seperator{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
+@keyframes seperator{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
+#h2sec1{
+  font-size: 1.6em;
 }
